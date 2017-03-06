@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
-import {TemplateDrivenFormsComponent} from './template-driven-forms/template-driven-forms.component';
-import {ModelDrivenFormsComponent} from './model-driven-forms/model-driven-forms.component';
+import {TemplateComponent} from './template/template.component';
+import {ModelComponent} from './model/model.component';
 
 const routes: Routes = [{
   path:'',
@@ -11,16 +11,16 @@ const routes: Routes = [{
   children:[
    {
   path:'',
-  redirectTo: 'template-driven-forms',
+  redirectTo: 'model',
    pathMatch: 'full'
 },
 {
-  path:'model-driven',
-  component: ModelDrivenFormsComponent
-},
+  path:'model',
+  component: ModelComponent
+ },
 {
-  path:'template-driven-forms',
-  component: TemplateDrivenFormsComponent
+  path:'template',
+  component: TemplateComponent
 }
   ]
 
