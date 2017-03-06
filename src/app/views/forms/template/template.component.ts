@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TemplateComponent implements OnInit {
 formValues = {
   id: '',
-  name: 'nayak'
+  name: ''
 }
 
 submitted = false;
